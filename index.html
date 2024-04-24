@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>RECIPE BY DANIELA</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- jquery.min.js should be loaded before jquery.tablesorter.min.js because tablesorter requires basice jquery -->
+    <script
+    type="text/JavaScript"
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ></script>
+    <script
+    type="text/JavaScript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"
+    ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/w3.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia+Pro:600&display=swap">
+    <link rel="stylesheet" href="./css/styles.css" />
+    <style>
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Source Sans Pro", sans-serif;
+        font-family: "Sofia Pro", sans-serif;
+      }
+      
+      .w3-third img {
+        margin-bottom: -6px;
+        opacity: 0.8;
+        cursor: pointer;
+      } s
+      .w3-third img:hover {
+        opacity: 1;
+      }
+      .topnav {
+        overflow: hidden;
+        background-color: rgb(89, 89, 4);
+      }
+
+      .topnav a {
+        float: left;
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 10px;
+        text-decoration: none;
+        font-size: 13px;
+      }
+
+      .topnav a:hover {
+        background-color: transparent;
+        color: black;
+        font-size: 100%;
+      }
+
+      .topnav a.active {
+        background-color: rgb(89, 89, 4);
+        color: white;
+      }
+
+      .topnav .icon {
+        display: none;
+        padding: 40px 20px;
+      }
+
+      .topnav > *:not(:first-child) {
+        padding-top: 43px;
+      }
+
+      .topnav.responsive > *:not(:first-child) { 
+        padding: 3px 15px;
+      }
+
+      @media screen and (max-width: 780px) {
+        .topnav a:not(:first-child) {display: none;}
+        .topnav a.icon {
+          float: right;
+          display: block;
+          padding: 40px 20px;
+        }
+      }
+
+      @media screen and (max-width: 780px) {
+        .topnav.responsive {position: relative;}
+        .topnav.responsive .icon {
+          position: absolute;
+          right: 0;
+          top: 0;
+          padding: 40px 20px;
+        }
+        .topnav.responsive a {
+          float: none;
+          display: block;
+          text-align: left;
+        }}
+    </style>
+  </head>
+  <body class="w3-white w3-content" style="max-width: 1920px">
+    
+    <!-- !MENU! -->
+    <div class="topnav w3-top" id="myTopnav">
+      <a href="#home" class="active w3-padding-sides"><h2>recipe by daniela</h2></a>
+      <a style="color: white;" href="#about">ABOUT</a>
+      <a style="color: white;" href="#about">CONTACT</a>
+      <a style="color: white;" href="#recipes">RECIPES</a>
+      <a style="color: white;" href="#shop">SHOP</a>
+      <a style="color: white;" href="#videos">INSPO</a>
+      <a style="color: white;" href="#gallery">INSTAGRAM</a>
+      <a class="w3-padding-40 w3-hide-small w3-right" style="color: white;">
+        <i class="fa fa-shopping-basket"></i>
+      </a>
+      <a class="w3-padding-40 w3-hide-small w3-right" style="color: white;">
+        <i class="fa fa-search"></i>
+      </a>
+      <a href="javascript:void(0);" class="icon" style="color: white;" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+       </a>
+    </div>
+  
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main w3-center" style="margin-left: 0px;">
+      
+      <!-- Push down content on small screens -->
+      <div class="w3-hide-large" style="margin-top: 35px; margin-right: 0px;">
+      </div>
+
+      <!-- Home background image -->
+      <div class="w3-padding-64" id="home">
+        <img src="./img/banana-bread2.jpg" 
+            alt="banana-bread"
+            class="w3-image"
+            width="100%"
+            height="auto"
+          />
+      </div>
+     
+         <!-- About section -->
+        <div class="w3-container w3-text-black w3-padding-24" id="about">
+          
+          <div class="w3-content w3-left-align " 
+            style="max-width: 750px">
+            <p>
+              <img
+              src="./img/about-me.JPG"
+              alt="Me"
+              class="my-float-left my-padding-right"
+              width="250"
+              height="auto"
+              />
+              <br>
+              <h3 class="w3-padding-large"><b>ABOUT</b></h3>
+              <br>
+              <br>                 
+              I've always been deeply passionate about the enchantment of plant-forward cooking, drawn to the vibrant array of seasonal ingredients and the boundless creativity they inspire. My culinary journey is a testament to this passion, as I constantly seek out new ways to infuse simplicity with innovation, crafting recipes that are as accessible as they are inventive. Whether you're a seasoned home cook or just dipping your toes into the culinary world, my aim is to provide a guiding light, encouraging exploration and discovery in the kitchen.
+            </p>
+            <p>
+              But my love for food extends far beyond the mere act of cooking; it's about the profound connections forged through shared meals and heartfelt conversations. I believe that food has the power to transcend cultural boundaries and bring people together in ways that are truly magical. Through my recipes, I strive not only to tantalize taste buds but also to nurture the soul, creating moments of warmth and connection that linger long after the last bite has been savored.             
+            </p>
+            <p>             
+              <img 
+              src="./img/croissant-pan.jpg" 
+              class="my-float-right my-padding-left"
+              width="auto"
+              height="210"
+              alt="croissant line art"
+              />              
+              In my kitchen, every dish tells a story, weaving together personal anecdotes and cherished memories into a tapestry of flavor and emotion. It's about more than just following a recipe; it's about embracing vulnerability and authenticity, inviting others to join me on a journey of self-discovery through the art of cooking. My hope is that each recipe I share serves as a catalyst for deeper connections, fostering a sense of joy and fulfillment that transcends the boundaries of the kitchen and extends into every aspect of life.              
+            </p>
+         </div>
+        </div>
+    
+        <!-- Accordion / Contact section -->
+        <div class="w3-container w3-padding-64" id="contact"> 
+  
+          <div class="w3-row" style="max-width: 800px; margin: auto;">
+            <div class="w3-half w3-left">
+              <button 
+              class="w3-button w3-block my-olive"
+              onclick="myAccordion('accordion1')" class="w3-button w3-block w3-center-align">
+                <h5 class="w3-center w3-text-white">CONTACT ME <i class="fa fa-caret-down w3-padding-left-10"></i> </h5>
+                
+              </button>
+              <div id="accordion1" class="w3-hide w3-container" style="max-width: 600px">
+                <p>
+                  For all business and partnership inquiries, pleas e mail me here! For everything else too, feel free to drop a line, I'd love to chat!
+                </p>
+                <form action="/action_page.php" target="_blank">
+                  <div class="w3-section">
+                    <label>Name</label>
+                    <input
+                      class="w3-input w3-border"
+                      type="text"
+                      name="Name"
+                      required
+                    />
+                  </div>
+                  <div class="w3-section">
+                    <label>Email</label>
+                    <input
+                      class="w3-input w3-border"
+                      type="text"
+                      name="Email"
+                      required
+                    />
+                  </div>
+                  <div class="w3-section">
+                    <label>Message</label>
+                    <input
+                      class="w3-input w3-border"
+                      type="text"
+                      name="Message"
+                      required
+                    />
+                  </div>
+                  <button
+                    type="submit"
+                    class="w3-button w3-block my-olive w3-text-white w3-margin-bottom"
+                    >
+                    Send Message
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="w3-half w3-left">
+              <button 
+              class="w3-button w3-block my-olive"
+              onclick="myAccordion('accordion2')" class="w3-button w3-block w3-2021-raspberry-sorbet w3-center-align">
+                <h5 class="w3-center w3-text-white">CONNECT WITH ME<i class="fa fa-caret-down w3-padding-left-10"></i></h5>
+                
+              </button>
+              <div id="accordion2" class="w3-hide w3-container w3-center" style="max-height: 600px">
+                <a href="#home" target="_blank" class="w3-hover-opacity"><h5>TIKTOK</h5></a>
+                <a href="#home" target="_blank" class="w3-hover-opacity"><h5>INSTAGRAM</h5></a>
+                <a href="#home" target="_blank" class="w3-hover-opacity"><h5>PINTEREST</h5></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+         <!-- Recipes / Slideshow container -->
+      <div class="w3-container w3-text-black w3-padding-32" style="margin: 0 -16px" id="recipes">
+        <h3 class="w3-padding-20"><b>RECIPES</b></h3>  
+        
+        <div class="slideshow-container">
+
+            <!-- The dots/circles
+          <div class="w3-padding-20"  style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div> -->
+
+          <!-- 60%-width images with caption text -->
+          <div class="mySlides fade w3-container">
+            <img src="./img/tomato-salad.jpeg" style="width:70%" class="w3-padding-16">
+            <div class="my-olive w3-text-white w3-row-padding" style="width: 70%; display: inline-block;">
+              <h4>TOMATO SALAD</h4>
+            </div>
+            <div class="my-scrolling" style="width: 70%; display: inline-block; text-align: left;">
+              <p>
+                Savor the essence of summer with this enticing tomato salad recipe. Crafted with the freshest ingredients, including juicy tomatoes, thinly sliced red onions, and fragrant basil leaves.
+              </p>
+              <p>Ingredients:</p>
+              <ul>
+                <li>4 ripe tomatoes, preferably heirloom or vine-ripened</li>
+                <li>1/4 cup fresh basil leaves, torn into small pieces</li>
+                <li>2 tablespoons extra virgin olive oil</li>
+                <li>1 tablespoon balsamic vinegar</li>
+                <li>Salt and pepper to taste</li>
+              </ul>              
+              <ol> 
+                <li>Wash the tomatoes and basil leaves thoroughly under cold water. Pat them dry with a paper towel.</li>
+                <li>Slice the tomatoes into medium-thick slices and arrange them on a serving plate or in a bowl.</li>
+                <li>Scatter the torn basil leaves over the sliced tomatoes.</li>
+                <li>Drizzle the extra virgin olive oil and balsamic vinegar over the tomatoes and basil. Season with salt and pepper to taste.</li>
+                <li>Gently toss the salad to ensure all ingredients are evenly coated with the dressing.</li>
+                <li>Let the salad sit for a few minutes to allow the flavors to meld together.</li>
+                
+              </ol>
+              <p>Serve and enjoy your refreshing tomato and basil salad!</p>
+              <p>You can adjust the quantities of olive oil, balsamic vinegar, salt, and pepper according to your taste preferences. Additionally, feel free to add other ingredients like mozzarella cheese, red onion slices, or olives for extra flavor and texture.</p>
+            </div>
+          </div>
+          <div class="mySlides fade w3-container">
+            <img src="./img/greek-salad.jpeg" style="width:70%" class="w3-padding-16">
+            <div class="my-olive w3-text-white w3-row-padding" style="width: 70%; display: inline-block;">
+              <h4>GREEK SALAD</h4>
+            </div>
+            <div class="my-scrolling" style="width: 70%; display: inline-block; text-align: left;">
+              <p>This greek salad is best enjoyed fresh, but you can prepare the ingredients ahead of time and toss them together with the dressing just before serving to keep everything crisp and flavorful. Enjoy the vibrant flavors of Greece in every bite!</p>
+              <p>Ingredients: </p>
+              <ul>
+                <li>4 medium tomatoes, cut into wedges</li>
+                <li>1 cucumber, sliced</li>
+                <li>1 small red onion, thinly sliced</li>
+                <li>1 bell pepper (red, yellow, or green), seeded and sliced</li>
+                <li>1/2 cup Kalamata olives, pitted</li>
+                <li>1/2 cup crumbled feta cheese</li>
+                <li>1/4 cup extra virgin olive oil</li>
+                <li>2 tablespoons red wine vinegar</li>
+                <li>1 teaspoon dried oregano</li>
+                <li>Salt and freshly ground black pepper, to taste</li>
+                <li>Optional: 1/4 cup chopped fresh parsley or mint for garnish</li>
+              </ul>
+              <ol>
+                <li>In a large salad bowl, combine the tomato wedges, sliced cucumber, red onion, bell pepper slices, and Kalamata olives.</li>
+                <li>In a small bowl or jar, whisk together the extra virgin olive oil, red wine vinegar, dried oregano, salt, and pepper to make the dressing.</li>
+                <li>Pour the dressing over the salad ingredients in the bowl and toss gently to coat everything evenly.</li>
+                <li>Sprinkle the crumbled feta cheese over the top of the salad.</li>
+                <li>If using, garnish the salad with chopped fresh parsley or mint.</li>
+              </ol> 
+              <p>Serve immediately as a refreshing side dish or as a light meal on its own.</p>
+            </div>
+          </div>
+          <div class="mySlides fade w3-container">
+            <img src="./img/cookies.jpeg" style="width:70%" class="w3-padding-16">
+            <div class="my-olive w3-text-white w3-row-padding" style="width: 70%; display: inline-block;">
+              <h4>OATMEAL PECAN COOKIES</h4>
+            </div>
+            <div class="my-scrolling" style="width: 70%; display: inline-block; text-align: left;">
+              <p>Enjoy these delicious oatmeal pecan cookies with a glass of milk or your favorite hot beverage! They're perfect for a sweet treat any time of day.</p>
+              <p>Ingredients:</p>
+              <ul>
+                <li>1 cup all-purpose flour</li>
+                <li>1/2 teaspoon baking soda</li>
+                <li>1/2 teaspoon ground cinnamon</li>
+                <li>1/4 teaspoon salt</li>
+                <li>1/4 teaspoon salt</li>
+                <li>1/4 teaspoon salt</li>
+                <li>1/2 cup unsalted butter, softened</li>
+                <li>1/2 cup packed light brown sugar</li>
+                <li>1/4 cup granulated sugar</li>
+                <li>1 large egg</li>
+                <li>1 teaspoon vanilla extract</li>
+                <li>1 1/2 cups old-fashioned rolled oats</li>
+                <li>1/2 cup chopped pecans</li>
+              </ul>
+              <p>Instructions:</p>
+              <ol>
+                <li>Preheat your oven to 350°F (175°C). Line a baking sheet with parchment paper or silicone baking mat.</li>
+                <li>In a medium bowl, whisk together the flour, baking soda, cinnamon, and salt. Set aside.</li>
+                <li>In a large mixing bowl, cream together the softened butter, brown sugar, and granulated sugar until light and fluffy, about 2-3 minutes.</li>
+                <li>Beat in the egg and vanilla extract until well combined.</li>
+                <li>Gradually add the flour mixture to the wet ingredients, mixing until just combined.</li>
+                <li>Stir in the rolled oats and chopped pecans until evenly distributed throughout the dough.</li>
+                <li>Using a spoon or cookie scoop, drop rounded tablespoonfuls of dough onto the prepared baking sheet, spacing them about 2 inches apart.</li>
+                <li>Flatten each cookie slightly with the back of a spoon or your fingertips.</li>
+                <li>Bake in the preheated oven for 10-12 minutes, or until the edges are golden brown.</li>
+              </ol>
+              <p>Allow the cookies to cool on the baking sheet for a few minutes before transferring them to a wire rack to cool completely. Once cooled, store the oatmeal pecan cookies in an airtight container at room temperature for up to one week.</p>
+            </div>
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+               
+        </div>
+      </div>
+
+
+      <hr class="w3-opacity"/>
+
+      <!-- Shop Table-->
+      <div id="shop">
+        <div class="w3-text-black" style="max-width: 800px; margin: auto;">
+          <h3 class="w3-padding-64"><b>SHOP</b></h3>
+          <table id="myTable" class="w3-table-all">
+            <thead>
+              <tr>
+                <th>ITEM</th>
+                <th style="text-align: left;">NAME</th>
+                <th style="text-align: left;">TYPE</th>
+                <th>PRICE</th>
+              </tr>
+            </thead>
+              <tr>
+                <td>
+                  <img src="./img/e-book-stickers-01.png" style="height: 90px;" alt="e-book">
+                </td>
+                <td style="text-align: left;">e-book no.1</td>
+                <td style="text-align: left;">digital e-book</td>
+                <td>$29.00</td>
+                <td>
+                  <button class="w3-button my-olive w3-text-white"><h6>ADD TO CART</h6></button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="./img/e-book-stickers-02.png" style="height: 90px;" alt="e-book">
+                </td>
+                <td style="text-align: left;">book no.1</td>
+                <td style="text-align: left;">printed book</td>
+                <td>$34.00</td>
+                <td>
+                  <button class="w3-button my-olive w3-text-white"><h6>ADD TO CART</h6></button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="./img/e-book-stickers-03.png" style="height: 90px;" alt="e-book">
+                </td>
+                <td style="text-align: left;">sticker book</td>
+                <td style="text-align: left;">stickers</td>
+                <td>$12.90</td>
+                <td>
+                  <button class="w3-button my-olive w3-text-white"><h6>ADD TO CART</h6></button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="./img/e-book-stickers-04.png" style="height: 90px;" alt="e-book">
+                </td>
+                <td style="text-align: left;">sticker bundle</td>
+                <td style="text-align: left;">stickers</td>
+                <td>$21.50</td>
+                <td>
+                  <button class="w3-button my-olive w3-text-white"><h6>ADD TO CART</h6></button>
+                </td>
+              </tr>
+          </table>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <hr class="w3-opacity"/>
+      
+      <!-- Pastry Inspo -->
+      <div
+        class="w3-white"
+        id="videos"
+        >
+        <h3 class="w3-center w3-padding-32"><b>PASTRY INSPO</b></h3>
+        <div>
+          <div class="w3-center w3-padding-24">
+            <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/GWY-hRhcc1g?si=r2mqKNz1GaEOi8RJ" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="autoplay; encrypted-media;" 
+            >
+            </iframe>
+          </div>
+          <div class="w3-center w3-padding-24">
+            <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/U4dyWZZVeWI?si=ieIMY6w_IUYL_p-7" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="autoplay; encrypted-media"
+            >
+            </iframe>
+          </div>
+        
+          <div class="w3-center w3-padding-24">
+            <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/aOOiz5pxzco?si=pDHppYr83ydWQy3P" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="autoplay; encrypted-media"
+            >
+            </iframe>
+          </div>
+      </div>
+
+      <!-- Latest on Instagram / Photo grid -->
+      <h3 class="w3-center w3-padding-32" id="gallery"><b>LATEST ON INSTAGRAM</b></h3>
+      <div class="w3-row w3-white w3-padding-16">
+        <div class="w3-col" style="width:16.66%">
+          <img
+            src="./img/cake.png"
+            style="width: 100%"
+            onclick="onClick(this)"
+            alt="Chocolate Floureless Cake"
+          />
+        </div>
+        <div class="w3-col" style="width:16.66%">
+          <img
+            src="./img/salad.jpg"
+            style="width: 100%"
+            onclick="onClick(this)"
+            alt="Greek Salad"
+          />
+        </div>
+        <div class="w3-col" style="width:16.66%">
+          <img
+            src="./img/loaf.jpg"
+            style="width: 100%"
+            onclick="onClick(this)"
+            alt="Almond butter Banana Bread"
+          />
+        </div>
+        <div class="w3-col" style="width:16.66%">
+          <img
+            src="./img/galette.jpg"
+            style="width: 100%"
+            onclick="onClick(this)"
+            alt="Mushroom Galette"
+          />
+        </div>
+        <div class="w3-col" style="width:16.66%">
+          <img
+            src="./img/pancakes.jpg"
+            style="width: 100%"
+            onclick="onClick(this)"
+            alt="Oatmeal Cherry Pancakes"
+          />
+        </div>
+        <div class="w3-col" style="width:16.66%">
+          <img
+            src="./img/salmon-salad.jpg"
+            style="width: 100%"
+            onclick="onClick(this)"
+            alt="Salmon Cilantro Salad"
+          />
+        </div>
+        <!-- Modal for full size images on click-->
+        <div
+            id="modal01"
+            class="w3-modal w3-black"
+            style="padding-top: 0"
+            onclick="this.style.display='none'"
+            >
+            <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+            <div
+              class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64"
+              >
+              <img id="img01" class="w3-image" />
+              <p id="caption"></p>
+            </div>
+         </div>
+      </div>
+
+        <hr class="w3-opacity" />
+
+      <!-- Footer -->
+      <footer class="w3-container">
+        <div class="w3-row-padding">
+          <div class="w3-half w3-left-align" style="line-height: 10pt;">
+            <a href="#about" target="_blank" class="w3-hover-opacity"><h6>ABOUT</h6></a>
+            <a href="#contact" target="_blank" class="w3-hover-opacity"><h6>CONTACT ME</h6></a>
+            <a href="#recipes" target="_blank" class="w3-hover-opacity"><h6>RECIPES</h6></a>      
+                    
+          </div>
+          <div class="w3-half w3-right-align"  style="line-height: 10pt;">
+            <a href="#home" target="_blank" class="w3-hover-opacity"><h6>TIKTOK</h6></a>
+            <a href="#home" target="_blank" class="w3-hover-opacity"><h6>INSTAGRAM</h6></a>
+            <a href="#home" target="_blank" class="w3-hover-opacity"><h6>PINTEREST</h6></a>
+          </div>
+        </div>
+      </footer>
+      <div class="w3-center">
+       <h6>COPYRIGHT 2024 RECIPE BY DANIELA</h6>
+      </div>
+
+      <!-- End page content -->
+    </div>
+
+    <script>
+      // Script to open and close sidebar
+      function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+      }
+
+      function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+      }
+
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        // debugger;
+        if (!x.classList.contains("responsive")) {
+          x.classList.add("responsive");
+        } else {
+          x.classList.remove("responsive");
+        }
+      }
+
+      // Modal Image Gallery
+      function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+      }
+
+      // Carrousel
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }
+
+    </script>
+    <script>
+      // sortable table
+      $(document).ready(function () {
+        $("table#myTable").tablesorter({
+          sortList: [[1, 0]], // first index - column. second index - 0 for asc; 1 for desc
+          CssAsc: "tablesorter-headerAsc",
+          CssDesc: "tablesorter-headerDesc",
+        });
+      });
+    </script>
+    <script>
+      function myAccordion(id) {
+        var x = document.getElementById(id);
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+          x.previousElementSibling.className =
+            x.previousElementSibling.className.replace(
+              "w3-brown",
+              "w3-2021-raspberry-sorbet"
+            );
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+          x.previousElementSibling.className =
+            x.previousElementSibling.className.replace(
+              "w3-2021-raspberry-sorbet",
+              "w3-brown"
+            );
+        }
+      }
+    </script>
+  </body>
+  
+</html>
